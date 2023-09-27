@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/exam.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>考试</h1>
+    <div id="timer"></div>
+    <form id="exam-content"></form>
+    <button id="submit-cta">提交作答</button>
+    <dialog id="favDialog">
+      <form method="dialog">
+        <h2>请您确认是否提交</h2>
+        <div class="dialog-btns">
+          <button value="cancel" class="dialog-btn">取消</button>
+          <button id="confirmBtn" value="default" class="dialog-btn">
+            确定
+          </button>
+        </div>
+      </form>
+    </dialog>
+    <div class="score-container score-hidden">
+      <div class="score" id="score">
+        <div class="score-box">
+          <div id="score-dashboard"></div>
+          <button id="go-back">返回重新答题</button>
+          <button id="go-home">返回主页</button>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="./js/exam.js"></script>
+  </body>
+</html>
